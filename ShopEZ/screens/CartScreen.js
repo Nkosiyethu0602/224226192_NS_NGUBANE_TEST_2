@@ -49,10 +49,10 @@ export default function CartScreen() {
 
         <View style={styles.buttons}>
           <TouchableOpacity onPress={() => updateQuantity(item.id, item.quantity + 1)} style={styles.qtyButton}>
-            <Text>➕</Text>
+            <Text>Add</Text>
           </TouchableOpacity>
           <TouchableOpacity onPress={() => updateQuantity(item.id, item.quantity - 1)} style={styles.qtyButton}>
-            <Text>➖</Text>
+            <Text>Remove</Text>
           </TouchableOpacity>
           <TouchableOpacity onPress={() => removeItem(item.id)} style={styles.removeButton}>
             <Text style={{ color: "white" }}>Remove</Text>
